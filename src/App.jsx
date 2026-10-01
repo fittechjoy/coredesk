@@ -1,3 +1,4 @@
+import joePhoto from "./assets/joe.jpg"
 function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -231,123 +232,72 @@ function App() {
     </div>
   </div>
 </section>
-{/* How It Works */}
-<section id="process" className="border-t border-slate-200 bg-slate-50">
+{/* About */}
+<section id="about" className="border-t border-slate-200 bg-white">
   <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
 
-    {/* Section heading */}
-    <div className="max-w-2xl">
-      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
-        How it works
-      </p>
+    <div className="grid gap-16 md:grid-cols-2 md:items-center">
 
-      <h2 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
-        A better way to manage the work behind your business.
-      </h2>
+      {/* Founder image */}
+      <div className="relative">
+        <div className="overflow-hidden rounded-2xl bg-slate-100">
+          <img
+            src={joePhoto}
+            alt="Joe, Founder of CoreDesk Business Solutions"
+            className="aspect-[4/5] w-full object-cover"
+          />
+        </div>
 
-      <p className="mt-6 text-base leading-7 text-slate-600">
-        We start by understanding how your business works today, then build
-        practical systems and processes around what you actually need.
-      </p>
-    </div>
+        <div className="absolute -bottom-5 -right-5 hidden rounded-xl border border-slate-200 bg-white px-6 py-4 shadow-sm md:block">
+          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-teal-600">
+            CoreDesk
+          </p>
 
-    {/* Process */}
-    <div className="mt-16 grid gap-0 border-t border-slate-300">
-
-      {/* Step 01 */}
-      <div className="grid gap-6 border-b border-slate-300 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          01
-        </span>
-
-        <h3 className="text-xl font-semibold text-slate-950">
-          Assess
-        </h3>
-
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          We learn how your business currently operates, what tools you use,
-          and where administrative work is creating friction.
-        </p>
+          <p className="mt-1 text-sm font-medium text-slate-900">
+            Business Operations & Support
+          </p>
+        </div>
       </div>
 
-      {/* Step 02 */}
-      <div className="grid gap-6 border-b border-slate-300 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          02
-        </span>
-
-        <h3 className="text-xl font-semibold text-slate-950">
-          Identify
-        </h3>
-
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          We identify repetitive tasks, gaps, bottlenecks, and areas where
-          better organization can improve visibility and efficiency.
+      {/* About content */}
+      <div>
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
+          About CoreDesk
         </p>
-      </div>
 
-      {/* Step 03 */}
-      <div className="grid gap-6 border-b border-slate-300 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          03
-        </span>
+        <h2 className="max-w-xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+          The right support, without building another department.
+        </h2>
 
-        <h3 className="text-xl font-semibold text-slate-950">
-          Recommend
-        </h3>
+        <div className="mt-8 space-y-5 text-base leading-7 text-slate-600">
+          <p>
+            CoreDesk was created around a simple idea: small businesses
+            shouldn't have to manage every administrative task on their own.
+          </p>
 
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          We recommend practical tools and workflows that fit your business
-          rather than adding unnecessary complexity.
-        </p>
-      </div>
+          <p>
+            We help business owners understand what's happening behind the
+            scenes, organize their workflows, and put practical systems in
+            place to keep the operation running smoothly.
+          </p>
 
-      {/* Step 04 */}
-      <div className="grid gap-6 border-b border-slate-300 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          04
-        </span>
+          <p>
+            Rather than forcing every business into the same tools or
+            processes, CoreDesk starts by understanding how the business
+            actually works and then builds support around its needs.
+          </p>
+        </div>
 
-        <h3 className="text-xl font-semibold text-slate-950">
-          Implement
-        </h3>
+        {/* Founder */}
+        <div className="mt-10 border-t border-slate-200 pt-8">
+          <p className="text-lg font-semibold text-slate-950">
+            Joseph M. Njoroge
+          </p>
 
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          We help put the selected systems, workflows, documentation, and
-          processes into practice.
-        </p>
-      </div>
-
-      {/* Step 05 */}
-      <div className="grid gap-6 border-b border-slate-300 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          05
-        </span>
-
-        <h3 className="text-xl font-semibold text-slate-950">
-          Support
-        </h3>
-
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          We provide ongoing back-office support to keep information,
-          workflows, and administrative tasks organized.
-        </p>
-      </div>
-
-      {/* Step 06 */}
-      <div className="grid gap-6 py-8 md:grid-cols-[100px_1fr_1fr] md:items-start">
-        <span className="text-sm font-medium text-teal-600">
-          06
-        </span>
-
-        <h3 className="text-xl font-semibold text-slate-950">
-          Improve
-        </h3>
-
-        <p className="max-w-md text-sm leading-7 text-slate-600">
-          As the business changes, we refine processes and systems so the
-          back office continues to support the way the business operates.
-        </p>
+          <p className="mt-1 text-sm text-teal-600">
+            Founder, CoreDesk Business Solutions
+          </p>
+        </div>
       </div>
 
     </div>
