@@ -303,7 +303,192 @@ function App() {
     </div>
   </div>
 </section>
+{/* Built Around Your Business */}
+<section className="border-t border-slate-200 bg-slate-950 text-white">
+  <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+
+    <div className="grid gap-16 md:grid-cols-2 md:items-end">
+
+      {/* Heading */}
+      <div>
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-teal-400">
+          Built around your business
+        </p>
+
+        <h2 className="max-w-xl text-4xl font-semibold tracking-tight md:text-5xl">
+          Practical support. Clearer operations.
+        </h2>
+      </div>
+
+      {/* Intro */}
+      <p className="max-w-lg text-base leading-7 text-slate-300">
+        Every business works differently. CoreDesk focuses on understanding
+        your operation first, then putting the right systems and support
+        around it.
+      </p>
+    </div>
+
+    {/* Principles */}
+    <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-slate-800 bg-slate-800 md:grid-cols-2">
+
+      {/* 01 */}
+      <div className="bg-slate-950 p-8 md:p-10">
+        <span className="text-sm font-medium text-teal-400">
+          01
+        </span>
+
+        <h3 className="mt-8 text-xl font-semibold">
+          Practical systems
+        </h3>
+
+        <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
+          We use tools and workflows that fit the way your business actually
+          operates.
+        </p>
+      </div>
+
+      {/* 02 */}
+      <div className="bg-slate-950 p-8 md:p-10">
+        <span className="text-sm font-medium text-teal-400">
+          02
+        </span>
+
+        <h3 className="mt-8 text-xl font-semibold">
+          Clear visibility
+        </h3>
+
+        <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
+          Organized information and reporting help you understand what's
+          happening across the business.
+        </p>
+      </div>
+
+      {/* 03 */}
+      <div className="bg-slate-950 p-8 md:p-10">
+        <span className="text-sm font-medium text-teal-400">
+          03
+        </span>
+
+        <h3 className="mt-8 text-xl font-semibold">
+          Flexible support
+        </h3>
+
+        <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
+          Support can adapt as your business changes, grows, and takes on new
+          operational needs.
+        </p>
+      </div>
+
+      {/* 04 */}
+      <div className="bg-slate-950 p-8 md:p-10">
+        <span className="text-sm font-medium text-teal-400">
+          04
+        </span>
+
+        <h3 className="mt-8 text-xl font-semibold">
+          Less administrative burden
+        </h3>
+
+        <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
+          Keep the work behind the business organized so owners can spend more
+          time focused on the business itself.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* Contact CTA */}
+<section id="contact" className="bg-white">
+  <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+
+    <div className="rounded-3xl bg-slate-100 px-8 py-16 text-center md:px-16 md:py-20">
+
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
+        Let's talk
+      </p>
+
+      <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
+        Ready to get your back office organized?
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600">
+        Let's start with a conversation about how your business operates,
+        what's creating friction, and where better systems could help.
+      </p>
+
+      <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+
+        <a
+          href="mailto:Njorogejm@outlook.com"
+          className="rounded-full bg-slate-900 px-7 py-3.5 text-sm font-medium text-white transition hover:bg-slate-700"
+        >
+          Book a Consultation
+        </a>
+
+        <a
+          href="#services"
+          className="rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+        >
+          View Services
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
       </main>
+      {/* Footer */}
+<footer className="border-t border-slate-200 bg-white">
+  <div className="mx-auto max-w-7xl px-6 py-10">
+
+    <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+
+      <div>
+        <a
+          href="#"
+          className="text-xl font-bold tracking-tight text-slate-950"
+        >
+          CORE<span className="font-light">desk</span>
+        </a>
+
+        <p className="mt-2 text-sm text-slate-500">
+          The support behind your business.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap gap-6 text-sm text-slate-600">
+        <a href="#services" className="hover:text-slate-950">
+          Services
+        </a>
+
+        <a href="#process" className="hover:text-slate-950">
+          How It Works
+        </a>
+
+        <a href="#about" className="hover:text-slate-950">
+          About
+        </a>
+
+       <a
+  href="#contact"
+  className="rounded-full bg-slate-900 px-7 py-3.5 text-sm font-medium text-white transition hover:bg-slate-700"
+>
+  Book a Consultation
+</a>
+      </div>
+
+    </div>
+
+    <div className="mt-8 border-t border-slate-200 pt-6">
+      <p className="text-xs text-slate-400">
+        © 2026 CoreDesk Business Solutions. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
     </div>
   )
 }
