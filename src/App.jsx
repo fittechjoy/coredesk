@@ -116,46 +116,212 @@ function App() {
   </nav>
 </header>
 
-      {/* Hero */}
-      <main>
-        <section className="relative overflow-hidden">
-          <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-            <div className="max-w-4xl">
-              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
-                Back-Office Operations & Business Support
+  <main>
+  {/* Hero */}
+<section className="relative overflow-hidden">
+  <div className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:py-32">
+
+    <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
+
+      {/* Hero content */}
+      <div>
+        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
+          Back-Office Operations & Business Support
+        </p>
+
+        <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight text-slate-950 md:text-6xl lg:text-7xl">
+          The support
+          <br />
+          behind your business.
+        </h1>
+
+        <p className="mt-8 max-w-xl text-lg leading-8 text-slate-600 md:text-xl">
+          We help small businesses organize the administrative and
+          operational work behind the scenes, so owners can focus on
+          running and growing their business.
+        </p>
+
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#contact"
+            className="rounded-full bg-slate-900 px-7 py-3.5 text-center text-sm font-medium text-white transition hover:bg-slate-700"
+          >
+            Book a Back-Office Assessment
+          </a>
+
+          <a
+            href="#services"
+            className="rounded-full border border-slate-300 px-7 py-3.5 text-center text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+          >
+            Explore Services
+          </a>
+        </div>
+      </div>
+
+      {/* Operations visual */}
+      <div className="relative mx-auto w-full max-w-xl lg:ml-auto">
+
+        {/* Decorative background */}
+        <div className="absolute -inset-6 rounded-[2rem] bg-slate-50" />
+
+        <div className="relative rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.18)] md:p-6">
+
+          {/* Window header */}
+          <div className="flex items-center justify-between border-b border-slate-100 pb-5">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-600">
+                Operations
               </p>
 
-              <h1 className="text-5xl font-semibold leading-tight tracking-tight text-slate-950 md:text-7xl">
-                The support
-                <br />
-                behind your business.
-              </h1>
-
-              <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-                We help small businesses organize the administrative and
-                operational work behind the scenes, so owners can focus on
-                running and growing their business.
+              <p className="mt-1 text-sm font-semibold text-slate-950">
+                Business Overview
               </p>
+            </div>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#contact"
-                  className="rounded-full bg-slate-900 px-7 py-3.5 text-center text-sm font-medium text-white transition hover:bg-slate-700"
-                >
-                  Book a Back-Office Assessment
-                </a>
-
-                <a
-                  href="#services"
-                  className="rounded-full border border-slate-300 px-7 py-3.5 text-center text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
-                >
-                  Explore Services
-                </a>
-              </div>
+            <div className="flex gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-slate-200" />
+              <span className="h-2 w-2 rounded-full bg-slate-200" />
+              <span className="h-2 w-2 rounded-full bg-slate-200" />
             </div>
           </div>
-        </section>
 
+          {/* Metrics */}
+          <div className="grid grid-cols-3 gap-3 py-5">
+
+            <div className="rounded-xl bg-slate-50 p-4">
+              <p className="text-[11px] text-slate-500">
+                Workforce
+              </p>
+
+              <p className="mt-2 text-xl font-semibold text-slate-950">
+                Organized
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-slate-50 p-4">
+              <p className="text-[11px] text-slate-500">
+                Reporting
+              </p>
+
+              <p className="mt-2 text-xl font-semibold text-slate-950">
+                Clear
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-slate-50 p-4">
+              <p className="text-[11px] text-slate-500">
+                Workflows
+              </p>
+
+              <p className="mt-2 text-xl font-semibold text-slate-950">
+                Connected
+              </p>
+            </div>
+
+          </div>
+
+          {/* Workflow */}
+          <div className="rounded-2xl border border-slate-200 p-5">
+
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-semibold text-slate-950">
+                Operational workflow
+              </p>
+
+              <span className="rounded-full bg-teal-50 px-3 py-1 text-[11px] font-medium text-teal-700">
+                Organized
+              </span>
+            </div>
+
+            <div className="mt-6 space-y-5">
+
+              {/* Workflow item */}
+              <div className="flex items-center gap-4">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">
+                  01
+                </div>
+
+                <div className="flex-1">
+                  <div className="h-2.5 w-full rounded-full bg-slate-100">
+                    <div className="h-2.5 w-[88%] rounded-full bg-teal-500" />
+                  </div>
+
+                  <p className="mt-2 text-xs text-slate-500">
+                    Workforce information
+                  </p>
+                </div>
+              </div>
+
+              {/* Workflow item */}
+              <div className="flex items-center gap-4">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">
+                  02
+                </div>
+
+                <div className="flex-1">
+                  <div className="h-2.5 w-full rounded-full bg-slate-100">
+                    <div className="h-2.5 w-[72%] rounded-full bg-teal-500" />
+                  </div>
+
+                  <p className="mt-2 text-xs text-slate-500">
+                    Administrative workflows
+                  </p>
+                </div>
+              </div>
+
+              {/* Workflow item */}
+              <div className="flex items-center gap-4">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-950 text-xs font-semibold text-white">
+                  03
+                </div>
+
+                <div className="flex-1">
+                  <div className="h-2.5 w-full rounded-full bg-slate-100">
+                    <div className="h-2.5 w-[94%] rounded-full bg-teal-500" />
+                  </div>
+
+                  <p className="mt-2 text-xs text-slate-500">
+                    Business reporting
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Bottom status */}
+          <div className="mt-4 flex items-center justify-between rounded-xl bg-slate-950 px-5 py-4">
+            <div>
+              <p className="text-xs text-slate-400">
+                Back-office support
+              </p>
+
+              <p className="mt-1 text-sm font-medium text-white">
+                Built around your business
+              </p>
+            </div>
+
+            <div className="h-2.5 w-2.5 rounded-full bg-teal-400" />
+          </div>
+
+        </div>
+
+        {/* Floating label */}
+        <div className="absolute -bottom-5 -right-4 hidden rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-lg sm:block">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-teal-600">
+            CoreDesk
+          </p>
+
+          <p className="mt-1 text-xs font-medium text-slate-900">
+            The support behind the business
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>    
        {/* Services */}
 <section id="services" className="border-t border-slate-200 bg-white">
   <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
