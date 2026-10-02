@@ -124,7 +124,7 @@ function App() {
     <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
 
       {/* Hero content */}
-      <div>
+      <div className="animate-fade-up">
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
           Back-Office Operations & Business Support
         </p>
@@ -159,12 +159,12 @@ function App() {
       </div>
 
       {/* Operations visual */}
-      <div className="relative mx-auto w-full max-w-xl lg:ml-auto">
+      <div className="animate-fade-in relative mx-auto w-full max-w-xl lg:ml-auto">
 
         {/* Decorative background */}
         <div className="absolute -inset-6 rounded-[2rem] bg-slate-50" />
 
-        <div className="relative rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.18)] md:p-6">
+        <div className="relative rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_20px_60px_-20px_rgba(15,23,42,0.18)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_25px_70px_-20px_rgba(15,23,42,0.22)] md:p-6">
 
           {/* Window header */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-5">
@@ -348,7 +348,7 @@ function App() {
     <div className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 md:grid-cols-2">
 
       {/* Service 01 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300  hover:-translate-y-1  hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             01
@@ -370,7 +370,7 @@ function App() {
       </article>
 
       {/* Service 02 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300  hover:-translate-y-1 hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             02
@@ -392,7 +392,7 @@ function App() {
       </article>
 
       {/* Service 03 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300  hover:-translate-y-1  hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             03
@@ -414,7 +414,7 @@ function App() {
       </article>
 
       {/* Service 04 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300 hover:-translate-y-1  hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             04
@@ -436,7 +436,7 @@ function App() {
       </article>
 
       {/* Service 05 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300  hover:-translate-y-1 hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             05
@@ -458,7 +458,7 @@ function App() {
       </article>
 
       {/* Service 06 */}
-      <article className="group bg-white p-8 transition duration-300 hover:bg-slate-50 md:p-10">
+      <article className="group bg-white p-8 transition duration-300  hover:-translate-y-1 hover:bg-slate-50 md:p-10">
         <div className="flex items-start justify-between">
           <span className="text-sm font-medium text-slate-400">
             06
@@ -478,6 +478,131 @@ function App() {
           expirations, and create reminders for recurring requirements.
         </p>
       </article>
+
+    </div>
+  </div>
+</section>
+{/* How It Works */}
+<section
+  id="process"
+  className="scroll-mt-20 border-t border-slate-200 bg-slate-50"
+>
+  <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+
+    {/* Section heading */}
+    <div className="max-w-2xl">
+      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-teal-600">
+        How it works
+      </p>
+
+      <h2 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+        A better way to manage the work behind your business.
+      </h2>
+
+      <p className="mt-6 text-base leading-7 text-slate-600">
+        We start by understanding how your business works today, then build
+        practical systems and processes around what you actually need.
+      </p>
+    </div>
+
+    {/* Process */}
+    <div className="mt-16 grid gap-0 border-t border-slate-300">
+
+      {/* 01 */}
+      <div className="group grid gap-6 border-b border-slate-300 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          01
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Assess
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          We learn how your business currently operates, what tools you use,
+          and where administrative work is creating friction.
+        </p>
+      </div>
+
+      {/* 02 */}
+      <div className="group grid gap-6 border-b border-slate-300 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          02
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Identify
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          We identify repetitive tasks, gaps, bottlenecks, and areas where
+          better organization can improve visibility and efficiency.
+        </p>
+      </div>
+
+      {/* 03 */}
+      <div className="group grid gap-6 border-b border-slate-300 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          03
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Recommend
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          We recommend practical tools and workflows that fit your business
+          rather than adding unnecessary complexity.
+        </p>
+      </div>
+
+      {/* 04 */}
+      <div className="group grid gap-6 border-b border-slate-300 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          04
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Implement
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          We help put the selected systems, workflows, documentation, and
+          processes into practice.
+        </p>
+      </div>
+
+      {/* 05 */}
+      <div className="group grid gap-6 border-b border-slate-300 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          05
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Support
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          We provide ongoing back-office support to keep information,
+          workflows, and administrative tasks organized.
+        </p>
+      </div>
+
+      {/* 06 */}
+      <div className="group grid gap-6 py-8 transition-colors duration-300 hover:bg-white/60 md:grid-cols-[100px_1fr_1fr] md:items-start">
+        <span className="text-sm font-medium text-teal-600">
+          06
+        </span>
+
+        <h3 className="text-xl font-semibold text-slate-950">
+          Improve
+        </h3>
+
+        <p className="max-w-md text-sm leading-7 text-slate-600">
+          As the business changes, we refine processes and systems so the
+          back office continues to support the way the business operates.
+        </p>
+      </div>
 
     </div>
   </div>
@@ -721,11 +846,11 @@ function App() {
           About
         </a>
 
-       <a
+   <a
   href="#contact"
-  className="rounded-full bg-slate-900 px-7 py-3.5 text-sm font-medium text-white transition hover:bg-slate-700"
+  className="hover:text-slate-950"
 >
-  Book a Consultation
+  Contact
 </a>
       </div>
 
