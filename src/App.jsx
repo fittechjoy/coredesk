@@ -1,36 +1,120 @@
+import { useState } from "react"
 import joePhoto from "./assets/joe.jpg"
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
       {/* Navigation */}
-      <header className="border-b border-slate-200">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <a href="#" className="text-2xl font-bold tracking-tight">
-            CORE<span className="font-light">desk</span>
+<header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <nav className="mx-auto max-w-7xl px-6">
+
+    <div className="flex h-20 items-center justify-between">
+
+      {/* Logo */}
+      <a
+        href="#"
+        className="text-2xl font-bold tracking-tight text-slate-950"
+        onClick={() => setMenuOpen(false)}
+      >
+        CORE<span className="font-light">desk</span>
+      </a>
+
+      {/* Desktop navigation */}
+      <div className="hidden items-center gap-8 md:flex">
+
+        <a
+          href="#services"
+          className="text-sm text-slate-600 transition hover:text-slate-950"
+        >
+          Services
+        </a>
+
+        <a
+          href="#process"
+          className="text-sm text-slate-600 transition hover:text-slate-950"
+        >
+          How It Works
+        </a>
+
+        <a
+          href="#about"
+          className="text-sm text-slate-600 transition hover:text-slate-950"
+        >
+          About
+        </a>
+
+        <a
+          href="#contact"
+          className="rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-700"
+        >
+          Contact
+        </a>
+
+      </div>
+
+      {/* Mobile menu button */}
+      <button
+        type="button"
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-900 transition hover:bg-slate-100 md:hidden"
+      >
+        {menuOpen ? (
+          <span className="text-xl leading-none">×</span>
+        ) : (
+          <span className="text-lg leading-none">☰</span>
+        )}
+      </button>
+
+    </div>
+
+    {/* Mobile navigation */}
+    {menuOpen && (
+      <div className="border-t border-slate-200 py-6 md:hidden">
+
+        <div className="flex flex-col gap-1">
+
+          <a
+            href="#services"
+            onClick={() => setMenuOpen(false)}
+            className="rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+          >
+            Services
           </a>
 
-          <div className="hidden items-center gap-8 md:flex">
-            <a href="#services" className="text-sm text-slate-600 hover:text-slate-900">
-              Services
-            </a>
+          <a
+            href="#process"
+            onClick={() => setMenuOpen(false)}
+            className="rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+          >
+            How It Works
+          </a>
 
-            <a href="#process" className="text-sm text-slate-600 hover:text-slate-900">
-              How It Works
-            </a>
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+            className="rounded-lg px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+          >
+            About
+          </a>
 
-            <a href="#about" className="text-sm text-slate-600 hover:text-slate-900">
-              About
-            </a>
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="mt-2 rounded-full bg-slate-900 px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-700"
+          >
+            Contact
+          </a>
 
-            <a
-              href="#contact"
-              className="rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-700"
-            >
-              Contact
-            </a>
-          </div>
-        </nav>
-      </header>
+        </div>
+
+      </div>
+    )}
+
+  </nav>
+</header>
 
       {/* Hero */}
       <main>
