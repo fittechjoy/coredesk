@@ -1,16 +1,97 @@
-# React + Vite
+ CoreDesk Business Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> The support behind your business.
 
-Currently, two official plugins are available:
+A modern, responsive business website built for **CoreDesk Business Solutions**, an outsourced back-office operations and business support service for small businesses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The website presents CoreDesk's services, operating approach, founder information, and contact pathway through a clean, professional consulting-style interface.
 
-## React Compiler
+Live Website
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View the live website] https://coredesk-q6df.vercel.app/
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+Project Overview
+
+CoreDesk Business Solutions helps small businesses organize the administrative and operational work happening behind the scenes.
+
+The website was designed to communicate that service clearly while creating a professional digital presence that can be used for client outreach, proposals, referrals, and business development.
+
+This project was also an opportunity to practice building a complete responsive business website using React and Tailwind CSS.
+
+ Features
+
+- Responsive design for desktop, tablet, and mobile
+- Mobile navigation menu
+- Smooth scrolling between sections
+- Back-office services overview
+- Six-step service delivery process
+- Founder/about section
+- Business principles section
+- Contact call-to-action
+- Email consultation link
+- Accessible skip-to-content navigation
+- Keyboard-friendly navigation structure
+- SEO metadata
+- Open Graph social sharing metadata
+- Custom favicon
+- Social sharing/OG image
+- Responsive hover interactions
+- Reduced-motion support
+- Production deployment through Vercel
+
+
+Tech Stack
+
+- **React**
+- **JavaScript**
+- **Vite**
+- **Tailwind CSS**
+- **HTML5**
+- **CSS3**
+- **Git**
+- **GitHub**
+- **Vercel**
+
+Design Approach
+The design was created around a premium consulting/business aesthetic with modern technology influences.
+Visual direction
+- Navy and slate tones
+- Muted teal accents
+- Generous whitespace
+- Rounded interface elements
+- Minimal visual hierarchy
+- Responsive layouts
+- Subtle hover and entrance animations
+
+The hero section includes a stylized operations panel representing the type of organized back-office environment CoreDesk aims to provide. It is a visual representation rather than proprietary software.
+♿ Accessibility
+Accessibility was considered during development through:
+- Semantic HTML elements
+- Descriptive image alternative text
+- Accessible mobile navigation labeling
+- Skip-to-content functionality
+- Visible navigation structure
+- Reduced-motion support
+- Responsive layouts
+Keyboard focus styling is planned as a future refinement.
+
+ SEO
+The project includes basic search and social-sharing metadata, including:
+- Page title
+- Meta description
+- Author metadata
+- Search engine indexing directives
+- Open Graph metadata
+- Twitter/X card metadata
+- Social sharing image
+
+Developer
+Joy Kiama
+Frontend Developer
+Built as a real-world business website project for CoreDesk Business Solutions.
+
+ License
+This project is a portfolio and business website project.
+
